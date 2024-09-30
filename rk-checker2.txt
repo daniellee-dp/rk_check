@@ -1,14 +1,10 @@
 #!/bin/bash
-warn="[WARN]"
-err="[CRIT]"
-good="[GOOD]"
-info="[INFO]"
-
 for file in `cat /root/suspicious_files.txt`; do \
 
 if [ -f "$file" ]
 then
-    echo "-> Infection" $file
+    # echo "-> Infection" $file
+    echo "-> Infected"
 fi
 
 done
